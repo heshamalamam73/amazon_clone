@@ -1,0 +1,28 @@
+.same {
+    background-color: white;
+    padding: 10px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    padding: 10px;
+
+}
+
+.item_img {
+    padding-right: 10px;
+}
+
+.item_title {
+    color: #45a1ff;
+}
+
+.item_rating {
+    color: #ff9400;
+}
+
+.item_price {
+    color: #ff0039;
+
+}

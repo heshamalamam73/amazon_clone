@@ -1,0 +1,32 @@
+.flex_box {
+    width: 100%;
+    background-color: white;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.flex_head {
+    font-size: 2rem;
+}
+
+.display_flex_auto {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    overflow-x: auto;
+    height: 100%;
+
+}
+
+.img_box {
+    padding: 10px;
+    flex-basis: 200px;
+    min-width: 200px;
+}
+
+.img_box img {
+    width: 100%;
+    cursor: pointer;
+    height: 150px;
+
+}

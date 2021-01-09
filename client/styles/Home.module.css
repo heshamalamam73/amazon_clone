@@ -1,0 +1,163 @@
+.main {
+  min-height: 100vh;
+  background-color: #ededed;
+}
+
+.first_container {
+  background-color: #00c8d7;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+
+
+.second_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.first_container_head {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.first_container_head_p {
+  font-size: 2rem;
+}
+
+.first_container_head_text {
+  font-size: 4rem;
+}
+
+.first_container_head_img img {
+  width: 100%;
+  max-width: 180px;
+  padding: 20px;
+}
+
+/* finish head */
+
+.display_grid_4_1fr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.display_grid_4_1fr .box {
+  min-height: 350px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+}
+
+.box_heading {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.box_heading img {
+  border-radius: 50%;
+  padding-right: 10px;
+}
+
+.display_grid_2_1fr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.box2_heading {
+  font-size: 2.5rem;
+  padding: 5px;
+  min-height: 70px;
+}
+
+.display_flex_auto {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  overflow-x: auto;
+  height: 100%;
+
+}
+
+.img_box {
+  padding: 10px;
+  flex-basis: 200px;
+  min-width: 200px;
+}
+
+.img_box img {
+  width: 100%;
+  cursor: pointer;
+  height: 150px;
+
+}
+
+.display_flex_column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.flex_box {
+  width: 100%;
+  background-color: white;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.flex_head {
+  font-size: 2rem;
+}
+
+.last_container {
+  height: 500px;
+  background-color: white;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.box_container {
+  max-height: 350px;
+}
+
+.box_top {
+
+  background-color: black;
+}
+
+@media (max-width : 920px) {
+  .first_container_boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .display_grid_4_1fr {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+
+@media (max-width : 556px) {
+  .first_container_boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .display_grid_4_1fr {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}

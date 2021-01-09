@@ -1,0 +1,157 @@
+.container {
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.grid_head {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.flex_head {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 0px 10px;
+}
+
+.flex_head div {
+    padding-right: 20px;
+    color: #45a1ff;
+    margin-right: 20px;
+    padding-bottom: 10px;
+
+}
+
+.flex_head div:first-child {
+    border-bottom: 1px solid #ff9400;
+    padding-left: 10px;
+
+}
+
+.filter {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.filter_item {
+    padding-right: 5px;
+}
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.orders {
+    min-height: 100vh;
+    padding: 10px;
+
+}
+
+.new {
+    background-color: #ff9400;
+    padding: 5px;
+}
+
+.order_item_head {
+    min-height: 60px;
+    background-color: #ededf0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    color: #737373;
+    padding: 10px;
+}
+
+.grid_2_body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+}
+
+.blu {
+    color: #0a84ff;
+
+}
+
+.order_item {
+    border: 1px solid #eee;
+    min-height: 300px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    border-radius: 3px;
+}
+
+.order_action {
+    padding: 10px;
+}
+
+.order_action div {
+    padding: 5px;
+}
+
+.order_action div button {
+    width: 100%;
+    padding: 5px;
+}
+
+.ship_date {
+    font-size: 2rem;
+}
+
+.ship_status {
+    padding-bottom: 10px;
+}
+
+.product_title {
+    color: #0a84ff;
+}
+
+.product_price {
+    color: #ff0039;
+    padding-bottom: 10px;
+}
+
+
+.order_footer {
+    border-top: 1px solid #eee;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #0a84ff;
+
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.top_link {
+    justify-self: flex-start;
+}
+
+.search_bar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 500px;
+}
+
+.form_item input,
+.form_item button {
+    width: 100%;
+    height: 100%;
+}

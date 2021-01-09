@@ -1,0 +1,187 @@
+.container {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.product_container {
+    min-height: 100vh;
+    color: #38383d;
+}
+
+.back_link {
+    padding: 10px;
+}
+
+.back_link a {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+
+}
+
+.grid_3 {
+    display: grid;
+    grid-template-columns: 3fr 4fr 2fr;
+    min-height: 100vh;
+    grid-gap: 20px;
+
+}
+
+.product_title {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+
+.btn {
+    display: block;
+    margin: 5px auto;
+    width: 100%;
+    padding: 5px;
+    justify-content: space-between;
+
+}
+
+.btn button {
+    background-color: #ff9400;
+    width: 100%;
+    margin: 5px auto;
+    border: 1px solid #712b00;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 3px;
+
+
+}
+
+.icon {
+    justify-self: flex-start;
+    padding: 0px;
+}
+
+.status {
+    color: #058b00;
+    font-size: 1.5rem;
+}
+
+.price {
+    color: #a4000f;
+}
+
+.prime {
+    color: #0a84ff;
+    font-size: 1.5rem;
+}
+
+.action {
+    margin: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+    min-width: 170px;
+}
+
+
+
+.offerta {
+
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+
+
+
+}
+
+.label {
+    font-weight: bold;
+    display: flex;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    justify-content: center;
+
+}
+
+.main_img {
+    padding: 10px;
+
+}
+
+.head {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.small_img {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.small_img img {
+    padding-bottom: 10px;
+
+}
+
+.qty {
+    margin: 10px 0;
+}
+
+@media (max-width : 720px) {
+    .grid_3 {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 5px;
+
+
+    }
+
+    .img {
+        grid-template-columns: 1fr;
+    }
+
+    .small_img {
+        flex-direction: row;
+        grid-row: 2;
+    }
+
+    .small_img img {
+        padding: 0px 2px;
+    }
+
+
+
+    .action {
+        grid-column: span 2;
+    }
+
+    .grid_item {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width : 556px) {
+    .grid_3 {
+        display: block;
+    }
+
+    .img {
+        grid-template-columns: 1fr;
+    }
+
+    .small_img {
+        flex-direction: row;
+        grid-row: 2;
+    }
+
+
+
+}

@@ -1,0 +1,99 @@
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60px auto 1fr;
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header img {
+    width: 100%;
+    width: 80px;
+
+}
+
+.form {
+    border: 1px solid #eee;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form_head {
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.form input,
+.form button {
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.btn {
+    background-color: #ff9400;
+    border-radius: 4px;
+}
+
+.form_input {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+
+.new {
+    text-align: center;
+    padding: 5px;
+    max-width: 300px;
+    margin: 0px auto;
+}
+
+.new button {
+    width: 100%;
+    padding: 5px;
+}
+
+.footer {
+    background-color: #f9f9fa;
+    border-top: 1px solid #eee;
+    height: auto;
+
+}
+
+.flex {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex ul {
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.flex ul li {
+    padding: 0px 10px;
+    color: #45a1ff;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    display: block
+}

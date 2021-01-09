@@ -1,0 +1,145 @@
+.container {
+    min-height: 100vh;
+    background-color: #ededf0;
+}
+
+.empaty_message {
+    margin: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.grid_2 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.head {
+    font-size: 3rem;
+}
+
+.right_side {
+    padding: 15px;
+}
+
+.btn {
+    padding: 10px;
+    text-align: center;
+}
+
+.btn button {
+    width: 100%;
+    padding: 5px;
+    background-color: #ff9400;
+    border-radius: 3px;
+}
+
+
+
+
+
+.cart_container {
+    background-color: white;
+    min-height: 500px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.cart_head {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+
+.cart_item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.cart_item_img img {
+    max-width: 160px;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.action {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+
+
+.cart_item_title {
+    color: #45a1ff;
+    font-size: 2rem;
+
+}
+
+.cart_item_price {
+    font-weight: 600;
+    font-size: 2rem;
+    min-width: 80px;
+    text-align: right;
+}
+
+.flex_div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.flex_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid_4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: flex-start;
+    padding: 10px;
+    max-width: 600px;
+    color: #45a1ff;
+
+}
+
+.grid_4 div {
+    padding: 0px 10px;
+    border-right: 1px solid #38383d;
+}
+
+.grid_4 div:last-child {
+    border-right: none
+}
+
+@media(max-width : 720px) {
+    .grid_2 {
+        grid-template-columns: 5fr 3fr;
+    }
+
+    .cart_item_title,
+    .cart_item_price {
+        font-size: 15px;
+    }
+
+    .grid_4 {
+        width: 100%;
+    }
+
+}
+
+@media(max-width : 556px) {
+    .grid_2 {
+        grid-template-columns: 1fr;
+    }
+}

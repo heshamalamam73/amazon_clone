@@ -1,0 +1,141 @@
+.footer {
+    min-height: 100vh;
+    background-color: #202340;
+    color: white;
+    margin-top: 20px;
+}
+
+.top_button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #363959;
+    opacity: .7;
+}
+
+.top_button:hover {
+    opacity: 1;
+}
+
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+
+}
+
+.row ul {
+    list-style: none;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.row ul li {
+    padding: 8px 0px;
+    cursor: pointer;
+    color: #d7d7db;
+}
+
+.row ul li:hover {
+    border-bottom: 1px solid aliceblue;
+}
+
+.global {
+
+    text-align: center;
+    border-top: 1px solid aliceblue;
+    padding: 20px;
+    margin-top: 40px;
+
+}
+
+.footer_logo {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_logo img {
+    width: 120px;
+}
+
+.lang_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+.lang_row div {
+    padding: 0px 5px;
+    text-transform: capitalize;
+}
+
+.footer_end {
+    background-color: #0f1126;
+
+}
+
+.footer_end_row {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: left;
+
+}
+
+.footer_end_row ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer_end_row ul li {
+    padding: 10px 0px;
+}
+
+.footer_end_row ul li:hover {
+    border-bottom: 1px solid aliceblue;
+    cursor: pointer;
+}
+
+.footer_end_links {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.footer_end_links a {
+    padding: 10px;
+}
+
+@media (max-width : 920px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_end_row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width : 556px) {
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer_end_row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
