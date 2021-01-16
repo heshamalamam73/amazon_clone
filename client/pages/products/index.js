@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import Layout from "../../components/layout/layout";
 import styles from './Online.module.css'
 import Link from 'next/link'
+import LeftNav from "../../components/leftnav/LeftNav";
+import ProductsList from "../../components/productsList/ProductsList";
+import SearchList from "../../components/searchList/SearchList";
 
 function Index({ countries, title }) {
   const [keyword, setKeyword] = useState("");
@@ -30,8 +33,9 @@ function Index({ countries, title }) {
       
     };;
   return (
-    <Layout>
+    <Layout countries={countries}>
       <div className={styles.online_container}>
+
         <div className={styles.online_top}>
           <div className={styles.online_top_img}>
             <img
@@ -57,45 +61,10 @@ function Index({ countries, title }) {
                 </div>
               </div>
               <div className={styles.body_grid_2}>
-                <div className={styles.filter_list}>
-                  {countries.map((country) => (
-                    <div>
-                      <input
-                        className={styles.input}
-                        type="checkbox"
-                        name={country.region}
-                        value={country.region}
-                        onChange={handleChange}
-                      />
-                      <label >{country.region}</label>
-                      <br />
-                    </div>
-                  ))}
+                <div className={styles.body_grid_2}>
+                  <LeftNav countries={countries} handleChange={handleChange} />
                 </div>
-                <div className={styles.body_grid_4}>
-                  {filterdCountries.map((country) => (
-                    <Link href={`products/${country.alpha3Code}`}>
-                      <div className={styles.box}>
-                        <div className={styles.box_img}>
-                          <img src={country.flag} alt="" />
-                        </div>
-                        <div className={styles.box_body}>
-                          <div className={styles.price}>
-                            {country.population} $
-                          </div>
-                          <div>{country.region}</div>
-                          <div>Termina tra 2 giorni</div>
-                          <div className={styles.offer}>
-                            Offerte su prodotti per la tua Casa e la tua Cucina!
-                          </div>
-                        </div>
-                        <div className={styles.button_div}>
-                          <button>Scopri </button>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
+                <ProductsList products={filterdCountries} />
               </div>
             </section>
           </div>

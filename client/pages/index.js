@@ -10,8 +10,8 @@ export default function Home({ countries }) {
 
 
   return (
-    <Layout title="Amazon">
-      <div className={styles.main} id="app" >
+    <Layout title="Amazon" countries={countries}>
+      <div className={styles.main} id="app">
         <div className={styles.first_container}>
           <div className={styles.first_container_head}>
             <div className={styles.first_container_head_text}>
@@ -550,3 +550,12 @@ export default function Home({ countries }) {
   );
 
 }
+export const getStaticProps = async () => {
+  const res = await fetch("https://restcountries.eu/rest/v2/all");
+  const countries = await res.json();
+  return {
+    props: {
+      countries,
+    },
+  };
+};

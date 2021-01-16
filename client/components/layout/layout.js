@@ -5,27 +5,36 @@ import Head from "next/head";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import Sidebar from "../sidebar/Sidebar";
+import SignList from "../signList/SignList";
+import SearchList from "../searchList/SearchList";
 // import PublicIcon from '@material-ui/icons/Public';
 
-function Layout({ children, title = "Ilmondo" }) {
+function Layout({ children, title = "Ilmondo", countries }) {
   const handleHideSideBar = (e) => {
     e.preventDefault();
+    const app = document.getElementById("allapp");
     const side_bar = document.getElementById("side-bar");
     side_bar.style.marginLeft = "-280px";
+    app.classList.remove("disactive");
   };
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>{title} </title>
-      </Head>
+    <>
+      <SignList />
       <Sidebar />
-      <Header />
-      <div className={styles.main} onClick={handleHideSideBar}>
-        {children}
+      <SearchList />
+
+      <div className={styles.container} id="allapp">
+        <Head>
+          <title>{title} </title>
+        </Head>
+        <Header />
+        <div className={styles.main} onClick={handleHideSideBar}>
+          {children}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
 

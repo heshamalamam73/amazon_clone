@@ -27,3 +27,13 @@ img {
 .active {
   margin-left: 0px;
 }
+.disactive {
+  display: block;
+  background: rgba(black, 0.5) !important;
+  opacity: .7;
+  z-index: 2;
+  position: fixed;
+  height: 100vh;
+  transition: all .5s;
+
+}

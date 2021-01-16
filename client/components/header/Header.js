@@ -6,20 +6,33 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import SearchBar from "../searchbar/SearchBar";
 
-function Header() {
+function Header({ countries }) {
   const [keyword, setKeyword] = useState("");
   useEffect(() => {
     const input = document.getElementById("input");
     input.addEventListener("input", function () {
       setKeyword(this.value.toLowerCase());
     });
+
+    const signlist = document.getElementById("signList");
+    const signbtn = document.getElementById("login");
+    const app = document.getElementById("allapp");
+    signbtn.addEventListener("mouseenter", function () {
+      signlist.style.display = "block";
+      app.classList.add("disactive");
+    });
+    signlist.addEventListener("mouseleave", function () {
+      signlist.style.display = "none";
+      app.classList.remove("disactive");
+    });
   }, []);
   const handleLeftNaf = (e) => {
     e.preventDefault();
-    let app = document.getElementById("app");
+    let app = document.getElementById("allapp");
     const side_bar = document.getElementById("side-bar");
     console.log(side_bar);
     side_bar.style.margin = "0px";
+    app.classList.add("disactive");
   };
 
   return (
@@ -43,13 +56,12 @@ function Header() {
           </select>
           <SearchBar />
 
-       
           <button>
             <SearchIcon />
           </button>
         </div>
         <div className={styles.nav_item}>
-          <a>
+          <a id="login">
             {" "}
             <Link href="/ap/login"> Log in</Link>
           </a>
@@ -94,5 +106,13 @@ function Header() {
     </div>
   );
 }
-
+export const getStaticProps = async () => {
+  const res = await fetch("https://restcountries.eu/rest/v2/all");
+  const countries = await res.json();
+  return {
+    props: {
+      countries,
+    },
+  };
+};
 export default Header;

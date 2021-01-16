@@ -66,55 +66,12 @@
     grid-template-columns: 200px auto;
     background-color: aliceblue;
 }
-
 .body_grid_4 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 20px;
     background-color: white;
 }
-
-.box {
-    height: 400px;
-    border: 1px solid #eee;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.box_img {
-    min-height: 200px;
-}
-
-.box_body {
-    padding: 10px;
-}
-
-.button_div {
-    text-align: center;
-}
-
-.button_div button {
-    text-align: center;
-    background: #ff9400;
-    border-radius: 2px;
-    padding: 3px;
-    width: 80%;
-    border: 1px solid #d76e00;
-}
-
-.price {
-    color: #d70022;
-}
-
-.offer {
-    color: #45a1ff;
-}
-
-
-
 .filter_list {
     padding: 10px;
 }

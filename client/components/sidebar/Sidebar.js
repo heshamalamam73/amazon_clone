@@ -3,8 +3,10 @@ import styles from "./Sidebar.module.css";
 function Sidebar(props) {
   const handleClose = (e) => {
     e.preventDefault();
+
     const side_bar = document.getElementById("side-bar");
     side_bar.style.marginLeft = "-280px";
+    document.getElementById("allapp").classList.remove("disactive");
   };
   return (
     <div id="side-bar" className={styles.container}>
