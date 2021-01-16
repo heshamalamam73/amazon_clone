@@ -6,6 +6,8 @@ body {
   font-family: 'Roboto Condensed',
   sans-serif;
   box-sizing: border-box;
+  
+
 
 }
 
@@ -21,3 +23,7 @@ img {
   width: 100%;
 }
 
+
+.active {
+  margin-left: 0px;
+}

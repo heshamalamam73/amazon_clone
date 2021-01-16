@@ -75,7 +75,7 @@
 }
 
 .box {
-    min-height: 400px;
+    height: 400px;
     border: 1px solid #eee;
     display: flex;
     flex-direction: column;
@@ -118,6 +118,10 @@
 .filter_list {
     padding: 10px;
 }
+ .input {
+     color: #d70022;
+     padding: 10px;
+ }
 
 .up_head {
     padding: 5px 10px;
