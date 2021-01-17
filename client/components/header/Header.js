@@ -10,13 +10,15 @@ function Header({ countries }) {
   const [keyword, setKeyword] = useState("");
   useEffect(() => {
     const input = document.getElementById("input");
+    const signlist = document.getElementById("signList");
+    const signbtn = document.getElementById("login");
+    const app = document.getElementById("allapp");
+    const ship = document.getElementById("address");
+    const shipAdd = document.getElementById("shipAdd");
     input.addEventListener("input", function () {
       setKeyword(this.value.toLowerCase());
     });
 
-    const signlist = document.getElementById("signList");
-    const signbtn = document.getElementById("login");
-    const app = document.getElementById("allapp");
     signbtn.addEventListener("mouseenter", function () {
       signlist.style.display = "block";
       app.classList.add("disactive");
@@ -44,7 +46,11 @@ function Header({ countries }) {
           </div>
         </Link>
 
-        <div>invio a mahmoud cantu 22063</div>
+        <div>
+          <a id="address">
+            <Link href="#">invio a mahmoud cantu 22063</Link>
+          </a>
+        </div>
         <div className={styles.header_input}>
           <select className={styles.select}>
             <option value="">tutte le category </option>

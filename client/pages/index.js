@@ -5,6 +5,7 @@ import Header from '../components/header/Header'
 import { useEffect } from 'react'
 import Offerta from '../components/offerta/Offerta'
 import Sidebar from "../components/sidebar/Sidebar";
+import Shipping from "../components/shipping/Shipping";
 
 export default function Home({ countries }) {
 

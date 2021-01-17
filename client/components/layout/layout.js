@@ -7,6 +7,7 @@ import Footer from "../footer/Footer";
 import Sidebar from "../sidebar/Sidebar";
 import SignList from "../signList/SignList";
 import SearchList from "../searchList/SearchList";
+import Shipping from "../shipping/Shipping";
 // import PublicIcon from '@material-ui/icons/Public';
 
 function Layout({ children, title = "Ilmondo", countries }) {
@@ -23,6 +24,7 @@ function Layout({ children, title = "Ilmondo", countries }) {
       <SignList />
       <Sidebar />
       <SearchList />
+      <Shipping />
 
       <div className={styles.container} id="allapp">
         <Head>

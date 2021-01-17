@@ -6,6 +6,7 @@ import styles from './Novita.module.css'
 import LeftNav from "../../components/leftnav/LeftNav";
 import ProductsList from "../../components/productsList/ProductsList";
 function Novita({ countries, title }) {
+  const [keyword, setKeyword] = useState("");
   const handleChange = function (e) {
     if (e.target.checked) {
       setKeyword(e.target.value.toLowerCase());

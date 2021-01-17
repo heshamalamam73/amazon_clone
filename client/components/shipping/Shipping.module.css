@@ -1,0 +1,92 @@
+.container {
+    position: absolute;
+    width: 400px;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+    top: 50%;
+    border: 1px solid #eee;
+    transform: translate(50%, -50%);
+    right: 50%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all .5s;
+    padding-bottom: 40px;
+    color: #000000;
+    z-index: 40000;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        15px 10px 31px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000,
+        15px 10px 31px 4px rgba(0, 0, 0, 0);
+}
+
+/* */
+.head {
+    padding: 15px;
+    background-color: #ededf0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.body {}
+
+.sm:first-child {
+    text-align: left;
+}
+
+.sm {
+    color: #737373;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.form {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+
+}
+
+.login {
+    padding: 10px;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9400;
+    color: #737373;
+    text-transform: capitalize;
+    border-radius: 2px;
+    border: 1px solid #737373;
+}
+
+.form input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #737373;
+
+}
+
+.form button {
+    padding: 0px 20px;
+    margin-left: 10px;
+    border: 1px solid #737373;
+    color: #737373;
+    border-radius: 2px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+}
+
+.select option {
+    color: #737373;
+
+}

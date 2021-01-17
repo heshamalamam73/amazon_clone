@@ -6,11 +6,7 @@ import SearchList from "../searchList/SearchList";
 function SearchBar({ countries }) {
   return (
     <>
-      <input
-        type="text"
-        placeholder="Search"
-        id="input"
-      />
+      <input type="text" placeholder="Search" id="input" autoComplete="false" />
     </>
   );
 }
